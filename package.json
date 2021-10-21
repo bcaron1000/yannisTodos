@@ -1,5 +1,5 @@
 {
-  "name": "simpletodolist",
+  "name": "yannistodolist",
   "version": "1.0.0",
   "description": "to do list",
   "default": "src/index.html",
@@ -11,26 +11,12 @@
     "reinstall": "npm run clean && npm install",
     "clean:dev": "rm -rf .parcel-cache dist",
     "clean:git": "rm -rf .parcel-cache dist  node_modules",
-    "startup":"mkdir src src/scss src/js src/css src/data src/assets",
-    "index":"touch src/index.html src/js/index.js src/scss/styles.scss",
-    "devinstall":"npm install -D parcel sass http-server",
-    "frontinstall":"npm install uuid lodash"
+    "startup": "mkdir src src/scss src/js src/css src/data src/assets",
+    "index": "touch src/index.html src/js/index.js src/scss/styles.scss",
+    "devinstall": "npm install -D parcel sass http-server",
+    "frontinstall": "npm install uuid lodash"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bcaron1000/todolistapp.git"
-  },
-  "keywords": [
-    "to",
-    "do",
-    "list"
-  ],
-  "author": "Bryan Caron",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bcaron1000/todolistapp/issues"
-  },
-  "homepage": "https://github.com/bcaron1000/todolistapp#readme",
+  "homepage": "https://github.com/bcaron1000/yannisTodos#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "http-server": "^14.0.0",
