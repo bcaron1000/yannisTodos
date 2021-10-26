@@ -18,21 +18,7 @@
         "static": "npx gulp",
         "dev": "npm run static && npx parcel src/index.html",
         "git":"git add . && git push -u origin main"
-  },"repository": {
-    "type": "git",
-    "url": "git+https://github.com/bcaron1000/todolistapp.git"
   },
-  "keywords": [
-    "to",
-    "do",
-    "list"
-  ],
-  "author": "Bryan Caron",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bcaron1000/todolistapp/issues"
-  },
-  "homepage": "https://github.com/bcaron1000/todolistapp#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "http-server": "^14.0.0",
@@ -44,6 +30,6 @@
     "lodash": "^4.17.21",
     "uuid": "^8.3.2"       
 
-    
+
   }
 }
