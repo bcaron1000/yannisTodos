@@ -1,8 +1,8 @@
 {
-  "name": "yannis",
+  "name": "bryanstodos",
   "version": "1.0.0",
-  "description": "to do list",
-  "default": "src/index.html",
+  "description": "to do ui",
+  "main": "index.html",
   "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "rm -rf .parcel-cache dist && npm run static && npx parcel build src/index.html && npx parcel src/index.html",
@@ -16,20 +16,21 @@
         "devinstall": "npm install -D parcel gulp sass http-server",
         "frontinstall": "npm install uuid lodash",
         "static": "npx gulp",
-        "dev": "npm run static && npx parcel src/index.html",
-        "git":"git add . && git push -u origin main"
+        "dev": "npm run static && npx parcel src/index.html"
   },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0",
-    "http-server": "^14.0.0",
-    "parcel": "^2.0.0",
-    "sass": "^1.43.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcaron1000/bryanstodos.git"
   },
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "lodash": "^4.17.21",
-    "uuid": "^8.3.2"       
-
-
-  }
+  "keywords": [
+    "to",
+    "do",
+    "ui"
+  ],
+  "author": "Bryan Caron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcaron1000/bryanstodos/issues"
+  },
+  "homepage": "https://github.com/bcaron1000/bryanstodos#readme"
 }
