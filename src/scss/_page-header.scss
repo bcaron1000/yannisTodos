@@ -2,15 +2,62 @@
     text-align: center;
     padding: 3rem 0;
     display: flex;
+    
+    border-radius: 3px;
     flex-direction: column;
-    gap: 2rem;
+    
+    
     svg{
         width: 100%;
     }
     h1{
-        font-size: 5rem;
+        font-size: .75rem;
+        width: 100%;
     }
 }
 .title{
     font-size: 1.25rem;
+}
+.center-in-page{
+    margin: 1px;
+    padding: 7px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tagline-style{
+        color: #5364FA;
+        font-size: 1.25rem;
+        font: arial;
+}
+.link-styles{
+    border-style: solid;
+    border-color: #5364FA;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: #5364FA;
+
+}
+.error-style{
+    font-size: 2rem;
+    color: red;
+
+
+}
+.body-error-style{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
 }

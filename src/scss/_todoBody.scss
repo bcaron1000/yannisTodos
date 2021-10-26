@@ -1,0 +1,88 @@
+.directory{
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem 1rem 0;
+    height: 720px;
+    overflow: auto;
+    border-top: 5px solid #5364FA;
+    li :last-of-type{
+        margin-bottom: 3rem;
+    }
+}
+
+.card-style{
+    margin-top: 2rem;
+    
+    border-radius: 5px;
+    
+
+  
+    padding: .5rem .5rem .5rem .5rem;
+    display: flex;
+    flex-direction: row;  
+    margin: 2rem;  
+    h2{
+        font-weight: 900;
+        font-size: 1.25rem;
+    }
+    p{
+        font-style: italic;
+    }
+}
+.start-style{
+   display: flex;
+   flex-direction: column;
+   margin-right: auto;
+   
+}
+.end-style{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: auto;
+        padding: 10px 8px;
+    button{
+        padding: 2px 4px;
+        
+        font-size: 1rem;
+       
+    }
+    button:first-of-type{
+        background-color: blue;
+        margin-right: .65rem;
+        color: white;
+        
+    }
+    button:last-of-type{
+        background-color: red;
+        color: white;
+        
+    }
+}
+.work-style{
+    border: 1px solid rgb(60, 163, 94);
+    border-left: 2rem rgb(60, 163, 94) solid;
+    
+}
+.school-style{
+    border: 1px solid rgb(28, 25, 201);
+    border-left: 2rem rgb(28, 25, 201) solid;
+    
+}
+.home-style{
+    border: 1px solid rgb(70, 155, 148);
+    border-left: 2rem rgb(70, 155, 148) solid;
+    
+}
+.social-style{
+    border: 1px solid rgb(55, 236, 10);
+    border-left: 2rem rgb(55, 236, 10) solid;
+    
+}
+.health-style{
+    border: 1px solid rgb(51, 36, 51);
+    border-left: 2rem rgb(51, 36, 51) solid;
+    
+}
+
+

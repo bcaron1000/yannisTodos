@@ -1,29 +1,46 @@
 {
-  "name": "yannistodolist",
+  "name": "yannis",
   "version": "1.0.0",
   "description": "to do list",
   "default": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html",
-    "clean": "rm -rf node_modules",
-    "reinstall": "npm run clean && npm install",
-    "clean:dev": "rm -rf .parcel-cache dist",
-    "clean:git": "rm -rf .parcel-cache dist  node_modules",
-    "startup": "mkdir src src/scss src/js src/css src/data src/assets",
-    "index": "touch src/index.html src/js/index.js src/scss/styles.scss",
-    "devinstall": "npm install -D parcel sass http-server",
-    "frontinstall": "npm install uuid lodash"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "rm -rf .parcel-cache dist && npm run static && npx parcel build src/index.html && npx parcel src/index.html",
+        "build": "npm run static && npx parcel build src/index.html",
+        "clean": "rm -rf node_modules",
+        "reinstall": "npm run clean && npm install",
+        "clean:dev": "rm -rf .parcel-cache dist",
+        "clean:git": "rm -rf .parcel-cache dist  node_modules",
+        "startup": "mkdir src src/scss src/js src/css src/data src/assets",
+        "index": "touch src/index.html src/js/index.js src/scss/styles.scss",
+        "devinstall": "npm install -D parcel gulp sass http-server",
+        "frontinstall": "npm install uuid lodash",
+        "static": "npx gulp",
+        "dev": "npm run static && npx parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcaron1000/yannisTodos.git"
+  },
+  "keywords": [
+    "to",
+    "do",
+    "list"
+  ],
+  "author": "Bryan Caron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcaron1000/yannisTodos/issues"
   },
   "homepage": "https://github.com/bcaron1000/yannisTodos#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
     "http-server": "^14.0.0",
     "parcel": "^2.0.0",
-    "sass": "^1.43.2"
+    "sass": "^1.43.3"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
     "lodash": "^4.17.21",
     "uuid": "^8.3.2"
   }

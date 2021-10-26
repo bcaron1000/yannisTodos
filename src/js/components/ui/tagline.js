@@ -1,7 +1,7 @@
 import makeElement from "../../utils/makeElement"
 
 
-const levelHeading = function (className="ui-header", title="uiHeader", elem="h1"){
+const tagLine = function (className="ui-header", title="uiHeader", elem="h2"){
 
     const template = `<${elem} class="${className}">${title}</${elem}>`
     const element = makeElement(template)
@@ -9,4 +9,4 @@ const levelHeading = function (className="ui-header", title="uiHeader", elem="h1
     return element
 }
 
-export default levelHeading
+export default tagLine

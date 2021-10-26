@@ -1,15 +1,24 @@
 import { logo } from "../components/icons/logo"
-import levelHeading from "../components/ui/header"
 import makeElement from "../utils/makeElement"
+import link from "./../components/ui/link"
+import header from "./../components/ui/header"
+import tagLine from "../components/ui/tagline"
 
-
-const homePage = function(params){
-    const link = link('To dos', '/todos')
-    const pageHeader = document.createElement('header')
-    pageHeader.classList.add('page-header')
-    pageHeader.appendChild(makeElement(logo()))
-    // pageHeader.appendChild(link)
+const index = function(){
+    const page = document.createElement('div') 
+    const mainHeader = document.createElement('header')
+    mainHeader.classList.add('center-in-page') 
     
-    return pageHeader
+  
+    const homeLink = link("To Do's ", "/todoPage")
+    homeLink.classList.add('link-styles')
+    const tagline = tagLine('tagline-style', "We've got a list for you",'h2')
+    mainHeader.appendChild(makeElement(logo()))
+    mainHeader.append(tagline)
+    mainHeader.append(homeLink)
+    page.append(mainHeader)
+    return page
 }
-export default homePage
+
+export default index
+
