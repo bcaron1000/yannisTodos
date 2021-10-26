@@ -33,7 +33,8 @@ const todoitem = function ({ id, category, title, endDate, isComplete}) {
     </div>
     <div class="end-style">
     
-    <p class="controls"><button class="edit-button">edit</button><button class="delete-button>delete</button></p> 
+    <p class="controls"><button>edit</button>
+    <button>delete</button></p> 
     </div>
     </li> 
   `;

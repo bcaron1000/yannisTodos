@@ -38,8 +38,8 @@
 .end-style{
     display: flex;
     flex-direction: row;
-    
-    
+    gap: 1rem;
+    margin-left: auto;
         padding: 10px 8px;
     button{
         padding: 2px 4px;
@@ -48,13 +48,13 @@
        
     }
     button:first-of-type{
-        background-color: blue;
+        background-image: linear-gradient(#5364FA, silver);
         margin-right: .65rem;
         color: white;
         
     }
     button:last-of-type{
-        background-color: red;
+        background-image: linear-gradient(red, silver);
         color: white;
         
     }
