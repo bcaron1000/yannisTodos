@@ -2,7 +2,7 @@
   "name": "yannistodos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "default": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf .parcel-cache dist && npm run static && npx parcel build src/index.html && npx parcel src/index.html",
