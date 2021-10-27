@@ -1,7 +1,7 @@
 {
-  "name": "bryanstodos",
+  "name": "bryanstodolistapp",
   "version": "1.0.0",
-  "description": "to do ui",
+  "description": "to do list ui app",
   "default": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,27 +20,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bcaron1000/bryanstodos.git"
+    "url": "git+https://github.com/bcaron1000/bryanstodolistapp.git"
   },
   "keywords": [
     "to",
     "do",
-    "ui"
+    "list",
+    "app"
   ],
   "author": "Bryan Caron",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bcaron1000/bryanstodos/issues"
+    "url": "https://github.com/bcaron1000/bryanstodolistapp/issues"
   },
-  "homepage": "https://github.com/bcaron1000/bryanstodos#readme",
+  "homepage": "https://github.com/bcaron1000/bryanstodolistapp#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0",
+    "gulp": "^4.0.2",
     "http-server": "^14.0.0",
     "parcel": "^2.0.0",
-    "sass": "^1.43.3"
+    "sass": "^1.43.4"
   },
   "dependencies": {
-    "gulp": "^4.0.2",
     "lodash": "^4.17.21",
     "uuid": "^8.3.2"
   }

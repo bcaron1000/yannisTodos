@@ -1,7 +1,7 @@
 
-import todos from "../pages/todoPage"; 
-import home from "../pages/homePage";
-import notFound from "../pages/notFound";
+import todos from "../pages/todopage"; 
+import home from "../pages/homepage";
+import notFound from "../pages/notfound";
 /* 
      Route is a path to something .....file or function
      key value
@@ -10,7 +10,7 @@ import notFound from "../pages/notFound";
 */
 const routes = {
     "/": home,
-    "/todoPage": todos
+    "/todopage": todos
 }
 const Router =  function(pathname){
     // turns the object into an array         Finds the key from the url and compares  

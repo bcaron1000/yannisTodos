@@ -11,18 +11,25 @@ const todoitem = function ({ id, category, title, endDate, isComplete}) {
   }else {
     status = "Incomplete"
   }
-  //Turn into a switch
-  if (category === "work"){
-    styling = "work-style"
-  }else if(category === "school"){
-    styling = "school-style"
-  }else if(category === "home"){
-    styling = "home-style"
-  }else if (category === "social"){
-    styling = "social-style"
-  }else{
-    styling = "health-style"
-  }
+let itemCategory = category;
+
+switch(itemCategory){
+
+    case "work":
+      styling = "work-style";
+      break;
+    case "school":
+      styling = "school-style";
+      break;
+    case "home":
+      styling = "home-style";
+      break;
+    case "social":
+      styling = "social-style";
+      break;
+    default:
+      styling = "health-style";
+}
 
   const template = ` 
   <li class="card-style ${styling}" data-key="${id}">

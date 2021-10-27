@@ -1,7 +1,7 @@
 import { logo } from "../components/icons/logo"
 import makeElement from "../utils/makeElement"
-import link from "./../components/ui/link"
-import header from "./../components/ui/header"
+import link from "../components/ui/link"
+import header from "../components/ui/header"
 import tagLine from "../components/ui/tagline"
 
 const index = function(){
@@ -10,7 +10,7 @@ const index = function(){
     mainHeader.classList.add('center-in-page') 
     
   
-    const homeLink = link("To Do's ", "/todoPage")
+    const homeLink = link("To Do's ", "/todopage")
     homeLink.classList.add('link-styles')
     const tagline = tagLine('tagline-style', "We've got a list for you",'h2')
     mainHeader.appendChild(makeElement(logo()))
