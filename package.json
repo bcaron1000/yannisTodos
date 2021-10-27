@@ -1,8 +1,8 @@
 {
-  "name": "bryanstodolist",
+  "name": "yannistodos",
   "version": "1.0.0",
-  "description": "to do list app",
-  "default": "index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf .parcel-cache dist && npm run static && npx parcel build src/index.html && npx parcel src/index.html",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bcaron1000/bryanstodolistapp.git"
+    "url": "git+https://github.com/bcaron1000/yannistodos.git"
   },
   "keywords": [
     "to",
@@ -30,11 +30,10 @@
   "author": "Bryan Caron",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bcaron1000/bryanstodolistapp/issues"
+    "url": "https://github.com/bcaron1000/yannistodos/issues"
   },
-  "homepage": "https://github.com/bcaron1000/bryanstodolistapp#readme",
+  "homepage": "https://github.com/bcaron1000/yannistodos#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0",
     "gulp": "^4.0.2",
     "http-server": "^14.0.0",
     "parcel": "^2.0.0",
