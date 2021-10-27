@@ -1,6 +1,6 @@
-import todopage from "../pages/todopage";
-import home from "../pages/homepage";
-import notFound from "../pages/notfound";
+import todopage from "../pages/yannitodopage";
+import home from "../pages/yannihomepage";
+import notFound from "../pages/yanninotfoundpage";
 /* 
      Route is a path to something .....file or function
      key value
