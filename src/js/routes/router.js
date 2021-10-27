@@ -1,4 +1,4 @@
-import todos from "../pages/todopage"; 
+import todopage from "../pages/todopage"; 
 import home from "../pages/homepage";
 import notFound from "../pages/notfound";
 /* 
@@ -9,7 +9,7 @@ import notFound from "../pages/notfound";
 */
 const routes = {
     "/": home,
-    "/todopage": todos
+    "/todopage": todopage
 }
 const Router =  function(pathname){
     // turns the object into an array         Finds the key from the url and compares  

@@ -6,7 +6,7 @@ import button from "../components/ui/button"
 import directory from "../components/cards/todoDirectory"
 import todoitem from "../components/cards/todoitem"
 
-const todos = function(){
+const todopage = function(){
     const page = document.createElement('div') 
     page.classList.add('wrapper')
     
@@ -41,4 +41,4 @@ const todos = function(){
     return page
 }
 
-export default todos
+export default todopage
