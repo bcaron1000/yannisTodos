@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/bcaron1000/yannistodos#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
     "gulp": "^4.0.2",
     "http-server": "^14.0.0",
     "parcel": "^2.0.0",
