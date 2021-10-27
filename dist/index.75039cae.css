@@ -497,9 +497,6 @@ table th {
   flex-direction: row;
   margin: 2rem;
 }
-.card-style li :last-of-type {
-  margin-bottom: 2rem;
-}
 .card-style h2 {
   font-weight: 900;
   font-size: 1.25rem;
@@ -572,7 +569,7 @@ table th {
   background-color: #5364FA;
   color: white;
   text-align: end;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .footer-button {

@@ -2,11 +2,8 @@
     text-align: center;
     padding: 3rem 0;
     display: flex;
-    
     border-radius: 3px;
     flex-direction: column;
-    
-    
     svg{
         width: 100%;
     }
@@ -21,12 +18,10 @@
 .center-in-page{
     margin: 1px;
     padding: 7px;
-    
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 .tagline-style{
         color: #5364FA;
@@ -42,13 +37,10 @@
     margin-top: 1rem;
     color: white;
     background-color: #5364FA;
-
 }
 .error-style{
     font-size: 2rem;
     color: red;
-
-
 }
 .body-error-style{
     margin-top: 5rem;
