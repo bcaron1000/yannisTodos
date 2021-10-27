@@ -1,8 +1,8 @@
 {
-  "name": "bryanstodolistapp",
+  "name": "bryanstodolist",
   "version": "1.0.0",
   "description": "to do list app",
-  "main": "index.html",
+  "default": "index.js",
   "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "rm -rf .parcel-cache dist && npm run static && npx parcel build src/index.html && npx parcel src/index.html",
@@ -20,18 +20,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bcaron1000/todolistapp.git"
+    "url": "git+https://github.com/bcaron1000/bryanstodolistapp.git"
   },
   "keywords": [
     "to",
     "do",
-    "list",
-    "app"
+    "list"
   ],
   "author": "Bryan Caron",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bcaron1000/todolistapp/issues"
+    "url": "https://github.com/bcaron1000/bryanstodolistapp/issues"
   },
-  "homepage": "https://github.com/bcaron1000/todolistapp#readme"
+  "homepage": "https://github.com/bcaron1000/bryanstodolistapp#readme"
 }
