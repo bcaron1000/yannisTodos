@@ -1,4 +1,4 @@
-import todopage from "../pages/todopage"; 
+import todopage from "../pages/todoslist";
 import home from "../pages/homepage";
 import notFound from "../pages/notfound";
 /* 
