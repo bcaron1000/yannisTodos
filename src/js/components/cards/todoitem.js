@@ -14,11 +14,7 @@ const todoitem = function ({ id, category, title, endDate, isComplete}) {
   }else {
     status = "Incomplete"
   }
-if (endDate > isDate){
-  console.log("true");
-}else{
-  console.log("False");
-}
+
 
 switch(itemCategory){
 

@@ -13,7 +13,7 @@ const todopage = function(){
     const mainHeader = document.createElement('header')
     mainHeader.classList.add('center-in-page') 
     
-    const tagLine = header('tagline-style', "What is on the list today?", 'h1')
+    const tagLine = header('tagline-style', "What is on the list today?")
     mainHeader.appendChild(makeElement(logo()))
     mainHeader.append(tagLine)
     page.append(mainHeader)

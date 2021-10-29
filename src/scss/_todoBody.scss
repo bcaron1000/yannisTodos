@@ -51,24 +51,20 @@ body{
         border-radius: 3px;
         border: 1.5px;
         font-size: 1rem; 
+        color: white;
     }
     button:first-of-type{
-        background-image: linear-gradient(#5364FA, #B5BCF7);
+        background-image: linear-gradient(45deg,#5364FA, #B5BCF7);
         border-image: linear-gradient( #B5BCF7, #5364FA);
-        
-        color: white;
-        
     }
     button:last-of-type{
-        background-image: linear-gradient(6deg,red, rgb(105, 98, 98));
-        border-image: linear-gradient( rgb(105, 98, 98),red,);
-        color: white;  
+        background-image: linear-gradient(45deg,red, rgb(105, 98, 98));
+        border-image: linear-gradient( rgb(105, 98, 98),red,); 
     }
 }
 .work-style{
     border: 1px solid rgb(60, 163, 94);
     border-left: 2rem rgb(60, 163, 94) solid;
-    
 }
 .school-style{
     border: 1px solid rgb(28, 25, 201);
