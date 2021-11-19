@@ -1,4 +1,5 @@
-import makeElement from "../../utils/makeElement"
+
+import makeElement from "~/src/js/utils/makeElement"
 
 
 const levelHeading = function (className="ui-header", title="uiHeader", elem="h1"){

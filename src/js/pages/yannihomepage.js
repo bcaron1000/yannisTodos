@@ -1,8 +1,8 @@
-import { logo } from "../components/icons/logo"
-import makeElement from "../utils/makeElement"
-import link from "../components/ui/link"
-import header from "../components/ui/header"
-import tagLine from "../components/ui/tagline"
+import { logo } from "~/src/js/components/icons/logo"
+import makeElement from "~/src/js/utils/makeElement"
+import link from "~/src/js/components/ui/link/link"
+import header from "~/src/js/components/ui/header"
+import tagLine from "~/src/js/components/ui/tagline"
 
 const index = function(){
     const page = document.createElement('div') 

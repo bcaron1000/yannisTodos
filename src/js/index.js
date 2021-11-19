@@ -5,7 +5,7 @@ import keyGenerator from "./utils/key";
 
 
 const app = document.querySelector("#app");
-Router(window.location.pathname)
+
 
 const onAppInit = async function(e){
     let todoItems = await dataFetcher('./data/todos.json')
@@ -17,7 +17,7 @@ const onAppInit = async function(e){
     }
 
     createStore(todoItems)
-    
+    Router(window.location.pathname)
    
 }
 

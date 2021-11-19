@@ -1,4 +1,4 @@
-import makeElement from "../../utils/makeElement";
+import makeElement from "~/src/js/utils/makeElement"
 
 
 const button = function (label="ui button", className="ui-button", action=""){

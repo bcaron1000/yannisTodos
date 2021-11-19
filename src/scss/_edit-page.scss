@@ -1,0 +1,21 @@
+.editContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.5rem;
+}
+.checkbox{
+    padding-right: .25rem;
+}
+
+  .labelStyle{
+      font-size: 1rem;
+      color: #5364FA;
+      font-weight: 600;
+      align-items: left;
+  }
+  .inputStyle{
+      width:30rem;
+      
+  }

@@ -1,6 +1,6 @@
 import { logo } from "../components/icons/logo"
 import makeElement from "../utils/makeElement"
-import link from "../components/ui/link"
+import link from "../components/ui/link/link"
 import header from "../components/ui/header"
 import tagLine from "../components/ui/tagline"
 

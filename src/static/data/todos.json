@@ -3,22 +3,22 @@
   "id": "aw45f25v",
   "category": "school",
   "title": "business assignment",
-  "isComplete": true,
-  "startDate": "Wednesday September 3rd",
-  "startTime":"9:00am",
-  "endDate": "Wednesday November 3rd",
-  "endTime":"9:00am"
+  "isComplete": false,
+  "startDate": "2018-01-01",
+  "startTime":"09:00",
+  "endDate": "2022-01-01",
+  "endTime":"09:00"
 
   },
   {
   "id": "25e678ee",
   "category": "work",
   "title": "I'm a student",
-  "isComplete": true,
-  "startDate": "Wednesday September 3rd",
-  "startTime":"9:00am",
-  "endDate": "Thursday October 4th",
-  "endTime":"9:00am"
+  "isComplete": false,
+  "startDate": "2018-01-01",
+  "startTime":"09:00",
+  "endDate": "2022-01-01",
+  "endTime":"09:00"
     
   },
   {
@@ -26,30 +26,30 @@
     "category": "home",
     "title": "Clean My Room",
     "isComplete": true,
-    "startDate": "Wednesday September 3rd",
-    "startTime":"9:00am",
-    "endDate": "Thursday December  16th",
-    "endTime":"9:00am"
+    "startDate": "2018-01-01",
+    "startTime":"09:00",
+    "endDate": "2022-01-01",
+    "endTime":"09:00"
    
   },
   {
     "id": "7d92658d",
     "category": "social",
     "title": "Do some laundry",
-    "isComplete": true,
-    "startDate": "Wednesday September 3rd",
-    "startTime":"9:00am",
-    "endDate": "Thursday November 18th",
-    "endTime":"9:00am"
+    "isComplete": false,
+    "startDate": "2018-01-01",
+    "startTime":"09:00",
+    "endDate": "2022-01-01",
+    "endTime":"09:00"
   },
   {
     "id": "bd3d12be",
     "category": "health",
     "title": "MRI",
-    "isComplete": true,
-    "startDate": "Wednesday September 3rd",
-    "startTime":"9:00am",
-    "endDate": "Thursday June 9th",
-    "endTime":"9:00am"
+    "isComplete": false,
+    "startDate": "2018-01-01",
+    "startTime":"09:00",
+    "endDate": "2022-01-01",
+    "endTime":"09:00"
   }
 ]

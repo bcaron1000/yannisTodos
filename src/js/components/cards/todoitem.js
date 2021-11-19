@@ -44,13 +44,14 @@ switch(itemCategory){
     <div class="start-style">
     <h2>${categoryTitle} </h2>
     <h3>${title} </h3>
-    <p>Due: ${endDate}</p>
+    <p>Due:${endDate}</p>
     <p>${status}</p> 
     </div>
-    <div class="end-style">
-    
-    <p><button>edit</button>
-    <button>delete</button></p> 
+    <div class="end-style" >
+      <p data-key="${id}">
+      <button id="editTodoItem">edit</button>
+        <button id="deleteTodoItem" >delete</button>
+      </p> 
     </div>
     </li> 
   `;

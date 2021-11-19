@@ -1,18 +1,19 @@
-import todopage from "../pages/yannitodopage";
-import home from "../pages/yannihomepage";
-import notFound from "../pages/yanninotfoundpage";
-/* 
-     Route is a path to something .....file or function
-     key value
-     route   page.js ()
-     pathname is one of the routes you set up.....
-*/
+import todopage from "~/src/js/pages/yannitodopage";
+import home from "~/src/js/pages/yannihomepage";
+import notFound from "~/src/js/pages/yanninotfoundpage";
+import deletePage from "~/src/js/pages/delete";
+import addPage from "~/src/js/pages/add";
+import editPage from "~/src/js/pages/edit";
+
 const routes = {
     "/": home,
-    "/todopage": todopage
+    "/todopage": todopage,
+    "/delete": deletePage,
+    "/add": addPage,
+    "/edit": editPage
 }
-const Router =  function(pathname){
-    // turns the object into an array         Finds the key from the url and compares  
+const Router =  function(pathname, params=null){
+    
     const isValidRoute = Object.keys(routes).find(key => key===pathname)    
 
     const app = document.querySelector('#app')
@@ -22,14 +23,14 @@ const Router =  function(pathname){
         pathname,
         window.location.origin + pathname
     )
-    // if isvalid route is some other shit i will run the page not found
        if (isValidRoute === undefined){
            app.appendChild(notFound())
        }
-    // If isValid has a value it will run this block of code
+   
        else{
-    // pss the isValidRoute in like a variable  to define where its going
-         app.appendChild(routes[isValidRoute]())
+    
+         app.appendChild(routes[isValidRoute](params))
+         //pass the value in here
        }
 }
 

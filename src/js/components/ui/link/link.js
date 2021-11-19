@@ -1,5 +1,5 @@
-import {Router} from "../../routes/router";
-import makeElement from "../../utils/makeElement"
+import {Router} from "~/src/js/routes/router";
+import makeElement from "~/src/js/utils/makeElement"
 
 const onRequestPage = function(e){
     e.preventDefault();
