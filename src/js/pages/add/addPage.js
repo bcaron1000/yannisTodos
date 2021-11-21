@@ -25,7 +25,9 @@ const addPage = function () {
 
         let description = document.getElementById("todoItem").value;
         let itemCategory = document.getElementById("category").value
-        let dueDate = document.getElementById("todoItemDueDate").value
+        let startDate = document.getElementById("startDate").value
+        let startTime = document.getElementById("startTime").value
+        let endDate = document.getElementById("endDate").value
         let endTime = document.getElementById("endTime").value
         let id = newId;
 
@@ -34,9 +36,9 @@ const addPage = function () {
             payload: {  id:id, 
                         category: itemCategory, 
                         title: description, 
-                        startDate: currentDate,
-                        startTime: currentTime,
-                        endDate: dueDate,
+                        startDate: startDate || currentDate,
+                        startTime: startTime || currentTime,
+                        endDate: endDate,
                         endTime:endTime,
                         isComplete: false},
             cb: () => Router('/todopage')
@@ -64,16 +66,9 @@ const addPage = function () {
     <header class="welcome center-in-page">
         <h1>Add Todo Item</h1>
         <p>What would you like to add today?</p>
-        
-                <div class="editContainer frm-group">
-                    <label class="labelStyle">Todo Description</label>
-                        <input class="frm-control inputStyle" type="text" id="todoItem" size="30" placeholder="Add todo item....." />
-                    <label class="labelStyle">Due Date</label>
-                        <input class="frm-control inputStyle" type="date" id="todoItemDueDate" name="trip-start"  min="2018-01-01" max="2030-12-31">
-                    <label class="labelStyle">End Time</label>
-                        <input class="frm-control inputStyle" type="time" id="endTime" name="appt" min="00:00" max="24:00">
-                    
-                    <label class="labelStyle">Category</label>
+        <div class="editContainer frm-group">
+        <div class="splitter">
+        <label class="labelStyle">Category</label>
                         <select class="frm-control inputStyle" id="category">
                             <option value="school">School</option>
                             <option value="work">Work</option>
@@ -81,6 +76,28 @@ const addPage = function () {
                             <option value="social">Social</option>
                             <option value="health">Health</option>
                         </select>
+                    </div>
+                    <div class="splitter">
+                    <label class="labelStyle">Todo Description</label>
+                        <input class="frm-control inputStyle" type="text" id="todoItem" size="30" placeholder="Add todo item....." />
+                        </div>
+                        <div class="splitter">
+                        <label class="labelStyle">Start Date: </label>
+                        <input class="frm-control inputStyleSmall" type="date" 
+                        id="startDate" name="trip-start" value="" min="2018-01-01" max="2030-12-31">
+                        <label class="labelStyle">Start Time</label>
+                        <input class="frm-control inputStyleSmall" type="time" 
+                        id="startTime" name="appt" min="00:00" max="24:00" value=""/>
+                        </div>
+                        <div class="splitter">
+                        <label class="labelStyle">Due Date: </label>
+                        <input class="frm-control inputStyleSmall" type="date" 
+                        id="endDate" name="trip-start" value="" min="2018-01-01" max="2030-12-31">
+                        <label class="labelStyle">End Time</label>
+                        <input class="frm-control inputStyleSmall" type="time" 
+                        id="endTime" name="appt" min="00:00" max="24:00" value=""/>
+                        </div>
+                    
                     
                 </div>
        

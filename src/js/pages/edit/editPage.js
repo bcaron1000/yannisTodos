@@ -1,12 +1,8 @@
-import { logo } from "~/src/js/components/icons/logo"
 import makeElement from "~/src/js/utils/makeElement"
 import button from "~/src/js/components/ui/button"
 import reducer from "../../redux/reducers"
 import { Router } from "../../routes/router"
 import { getStore } from "../../redux/store"
-import keyGenerator from "../../utils/key"
-import { isDate } from "lodash";
-
 
 const editPage = function (props) {
    // Cancel Button
@@ -24,17 +20,12 @@ const editPage = function (props) {
         
             return (todoItemId.id === props.id);
         });
-        var currentdate = new Date(); 
-        var currentDate= currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/" 
-                + currentdate.getFullYear();
-     
-        var currentTime = currentdate.getHours() + ":"  
-                       + currentdate.getMinutes() 
 
         let description = document.getElementById("todoItem").value;
         let itemCategory = document.getElementById("category").value
-        let dueDate = document.getElementById("endDate").value
+        let startDate = document.getElementById("startDate").value
+        let startTime = document.getElementById("startTime").value
+        let endDate = document.getElementById("endDate").value
         let endTime = document.getElementById("endTime").value
         let complete = document.getElementById("completed").value
         let id = props.id;
@@ -50,9 +41,9 @@ const editPage = function (props) {
             payload: {  id:id, 
                         category: itemCategory, 
                         title: description, 
-                        startDate: currentDate,
-                        startTime: currentTime,
-                        endDate: dueDate,
+                        startDate: startDate,
+                        startTime: startTime,
+                        endDate: endDate,
                         endTime:endTime,
                         isComplete: complete},
                         itemIndex: index,
@@ -60,23 +51,17 @@ const editPage = function (props) {
         }
         reducer(action)
     }
-        var currentdate = new Date(); 
-        var currentDate= currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/" 
-                + currentdate.getFullYear();
-     
-        var currentTime = currentdate.getHours() + ":"  
-                       + currentdate.getMinutes() 
-
+        
+        let id = props.id;
         let description = props.title
         let itemCategory = props.category
-        let dueDate = props.endDate
-        let endTime = props.endTime
-        let id = props.id;
         let itemComplete = props.isComplete;
+        let startDate = props.startDate;
+        let startTime = props.startTime;
+        let endDate = props.endDate
+        let endTime = props.endTime
         console.log(itemComplete);
 
-        
         let completedTemplate
         if (itemComplete === true){
             completedTemplate =
@@ -142,23 +127,43 @@ const editPage = function (props) {
     <header class="welcome center-in-page">
         <h1>Edit Todo Item</h1>
         <p>What would you like change?</p>
-        
-            <div class="editContainer frm-group" data-key="${id}">
-                
-                <label class="labelStyle">Todo Description</label>
-                <input class="frm-control inputStyle" type="text" id="todoItem" size="30" placeholder="Add todo item....." value="${description}"/>
-                <label class="labelStyle">Due Date</label>
-                <input class="frm-control inputStyle" type="date" id="endDate" name="trip-start" value="${dueDate}" min="2018-01-01" max="2030-12-31">
-                <label class="labelStyle">End Time</label>
-                <input class="frm-control inputStyle" type="time" id="endTime" name="appt" min="00:00" max="24:00" value="${endTime}"/>
-                <label class="labelStyle">Complete</label>
-                <select class="frm-control inputStyle" id="completed">
-                ${completedTemplate}
-                </select>
-                <label class="labelStyle">Category</label>
-                <select class="frm-control inputStyle" id="category" value="${itemCategory}">
+        <div class="editContainer frm-group" data-key="${id}">
+            <label class="labelStyle">id: ${id}</label>
+                <div class="splitter">
+                <label class="labelStyle">Category: </label>
+                <select class="frm-control inputStyleSmall" 
+                id="category" value="${itemCategory}">
                 ${categoryTemplate}
                 </select>
+                <label class="labelStyle">Complete: </label>
+                <select class="frm-control inputStyleSmall" 
+                id="completed">
+                ${completedTemplate}
+                </select>
+                </div>
+                <div class="splitter">
+                <label class="labelStyle">Todo Description: </label>
+                <input class="frm-control inputStyle" type="text" 
+                id="todoItem" size="30" placeholder="Add todo item....." value="${description}"/>
+                </div>
+                <div class="splitter">
+                <label class="labelStyle">Start Date: </label>
+                <input class="frm-control inputStyleSmall" type="date" 
+                id="startDate" name="trip-start" value="${startDate}" min="2018-01-01" max="2030-12-31">
+                <label class="labelStyle">Start Time</label>
+                <input class="frm-control inputStyleSmall" type="time" 
+                id="startTime" name="appt" min="00:00" max="24:00" value="${startTime}"/>
+                </div>
+                <div class="splitter">
+                <label class="labelStyle">Due Date: </label>
+                <input class="frm-control inputStyleSmall" type="date" 
+                id="endDate" name="trip-start" value="${endDate}" min="2018-01-01" max="2030-12-31">
+                <label class="labelStyle">End Time</label>
+                <input class="frm-control inputStyleSmall" type="time" 
+                id="endTime" name="appt" min="00:00" max="24:00" value="${endTime}"/>
+                </div>
+                
+                
                 
             </div>
         

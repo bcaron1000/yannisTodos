@@ -16,9 +16,27 @@
       align-items: left;
   }
   .inputStyle{
-      width:30rem;
+      width:20rem;
       
   }
+  .inputStyleSmall{
+    width:9rem;
+}
   .fas{
       font-size: 2rem;
   }
+  .splitter{
+      display: flex;
+      
+      flex-direction: row;
+      gap:0.5rem;
+      margin-bottom: 0.5rem;
+      
+      input:first-of-type{
+          left:0;
+      }
+      input:last-of-type{
+          right:0;
+      }
+  }
+  
