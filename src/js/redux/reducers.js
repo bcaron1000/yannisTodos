@@ -6,12 +6,11 @@ function reducer(action) {
         
         
         case "edit": 
-        const i = action.itemIndex;
-        const editedStore = [...store.splice(i, 1, action.payload ) ]
-        console.log(editedStore);
-        updateStore(store)
-        action.cb()
-        break;
+            const i = action.itemIndex;
+            const editedStore = [...store.splice(i, 1, action.payload ) ]
+            updateStore(store)
+            action.cb()
+            break;
         case "delete":
             const index = action.payload.index
             const newStore = [...store.slice(0, index), ...store.slice(index+1)]

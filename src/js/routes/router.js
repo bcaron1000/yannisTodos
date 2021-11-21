@@ -28,9 +28,9 @@ const Router =  function(pathname, params=null){
        }
    
        else{
-    
+           console.log(isValidRoute);
+           console.log(params);
          app.appendChild(routes[isValidRoute](params))
-         //pass the value in here
        }
 }
 

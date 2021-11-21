@@ -39,6 +39,12 @@ const editPage = function (props) {
         let complete = document.getElementById("completed").value
         let id = props.id;
 
+        if (complete === "true"){
+            complete = true
+            endTime = currentTime
+        }else{
+            complete = false
+        }
         const action = {
             type: "edit",
             payload: {  id:id, 
@@ -70,21 +76,62 @@ const editPage = function (props) {
         let itemComplete = props.isComplete;
         console.log(itemComplete);
 
-       
+        
+        let completedTemplate
+        if (itemComplete === true){
+            completedTemplate =
+                    `   <option value=true selected>Completed</option>
+                        <option value=false >Still working on it</option>`
+        }else{
+            completedTemplate =
+                    `   <option value=true >Completed</option>
+                        <option value=false selected>Still working on it</option>`
+        }
 
-        document.getElementById('completed').value=itemComplete;
-        // const completedDDDL = document.getElementById("completed")
-        // selectItemByValue(completedDDDL, itemComplete)
-        // function selectItemByValue(elmnt, value){
-        //     for(var i=0; i < elmnt.options.length; i++)
-        //     {
-        //       if(elmnt.options[i].value === value) {
-        //         elmnt.selectedIndex = i;
-        //         break;
-        //       }
-        //     }
-        //   }
-        //Add something in to select the category and the completed status
+        let categoryTemplate
+        if (itemCategory === "school"){
+        categoryTemplate =
+                    `   <option value="school" selected>School</option>
+                        <option value="work">Work</option>
+                        <option value="home">Home</option>
+                        <option value="social">Social</option>
+                        <option value="health">Health</option>`
+       }
+        else if (itemCategory === "work"){
+        categoryTemplate =
+                    `   <option value="school" >School</option>
+                        <option value="work" selected>Work</option>
+                        <option value="home">Home</option>
+                        <option value="social">Social</option>
+                        <option value="health">Health</option>`
+       }
+       else if (itemCategory === "home"){
+        categoryTemplate =
+                    `   <option value="school" >School</option>
+                        <option value="work" >Work</option>
+                        <option value="home" selected>Home</option>
+                        <option value="social">Social</option>
+                        <option value="health">Health</option>`
+       }
+       else if (itemCategory === "social"){
+        categoryTemplate =
+                    `   <option value="school" >School</option>
+                        <option value="work" >Work</option>
+                        <option value="home" >Home</option>
+                        <option value="social" selected>Social</option>
+                        <option value="health">Health</option>`
+       }
+       else if (itemCategory === "health"){
+        categoryTemplate =
+                    `   <option value="school" >School</option>
+                        <option value="work" >Work</option>
+                        <option value="home" >Home</option>
+                        <option value="social" >Social</option>
+                        <option value="health" selected>Health</option>`
+       }
+
+        
+        
     const page = document.createElement('div')
     const cancelButton = button('Cancel')
     const submitButton = button('Update')
@@ -104,22 +151,14 @@ const editPage = function (props) {
                 <input class="frm-control inputStyle" type="date" id="endDate" name="trip-start" value="${dueDate}" min="2018-01-01" max="2030-12-31">
                 <label class="labelStyle">End Time</label>
                 <input class="frm-control inputStyle" type="time" id="endTime" name="appt" min="00:00" max="24:00" value="${endTime}"/>
-                    
                 <label class="labelStyle">Complete</label>
                 <select class="frm-control inputStyle" id="completed">
-                        <option value=true >Completed</option>
-                        <option value=true >Still working on it</option>
-                    </select>
-                
+                ${completedTemplate}
+                </select>
                 <label class="labelStyle">Category</label>
-                    <select class="frm-control inputStyle" id="category" value="${itemCategory}">
-                        <option value="school">School</option>
-                        <option value="work">Work</option>
-                        <option value="home">Home</option>
-                        <option value="social">Social</option>
-                        <option value="health">Health</option>
-                    </select>
-                
+                <select class="frm-control inputStyle" id="category" value="${itemCategory}">
+                ${categoryTemplate}
+                </select>
                 
             </div>
         
@@ -130,8 +169,6 @@ const editPage = function (props) {
     const pageHeader = makeElement(headerTemplate)
     pageHeader.querySelector('section').append(cancelButton, submitButton)
     page.append(pageHeader)
-    
-    
     return page
 }
 

@@ -1,18 +1,20 @@
 import { isDate } from "lodash";
 import makeElement from "../../utils/makeElement";
-
+import { isDate } from "lodash";
 
 const todoitem = function ({ id, category, title, endDate, isComplete}) {
-  
+
+
   let itemCategory = category;
   let status = "";
   let styling = "";
   let categoryTitle = "";
-
-  if(isComplete === true ){
-    status = "Completed"
+  let itemOverdue = "";
+ 
+  if(isComplete == true ){
+    status = `<span style="color:limegreen"><i class="fas fa-check-circle"></i></span>`
   }else {
-    status = "Incomplete"
+    status = `<span style="color:red"><i class="fas fa-times-circle"></i></span>`
   }
 
 
@@ -45,12 +47,12 @@ switch(itemCategory){
     <h2>${categoryTitle} </h2>
     <h3>${title} </h3>
     <p>Due:${endDate}</p>
-    <p>${status}</p> 
+    ${status}
     </div>
     <div class="end-style" >
       <p data-key="${id}">
-      <button id="editTodoItem">edit</button>
-        <button id="deleteTodoItem" >delete</button>
+      <button id="editTodoItem"><span style="color:#5364FA"><i class="fas fa-edit"></i></span></button>
+      <button id="deleteTodoItem"><span style="color:red"><i class="fas fa-trash"></i></span></button>
       </p> 
     </div>
     </li> 

@@ -26,7 +26,7 @@ const todopage = function(){
     //Delete TodoItem
     function onDeleteTodoItem(e){
         const todoItemId = e.currentTarget.parentElement.dataset.key;
-        const todolistObject = todoList.find(tdl => tdl.id === todoItemId)
+        
         
         Router('/delete', todoItemId)
     }
@@ -58,13 +58,14 @@ const todopage = function(){
 
     
     
-    
+   
     const mainFooter = document.createElement('footer')
     mainFooter.classList.add('foot-style')
     const addButton = button('Add +','footer-button', 'add')
     addButton.addEventListener('click', onAddTodoItem)
     mainFooter.appendChild(addButton)
     page.appendChild(mainFooter)
+  
 
     render();
     return page

@@ -13,6 +13,7 @@ const addPage = function () {
     let TodoList = getStore();
     const newId = uuidv4().substr(0,8);;
 
+    //Add item to store button
     function onAddTodoItem(e) { 
         var currentdate = new Date(); 
         var currentDate= currentdate.getDate() + "/"
@@ -43,6 +44,7 @@ const addPage = function () {
         reducer(action)
 
     }
+    // Cancel button
     function onCancelTodoItem(e) {
         const action = {
             type: "cancel",
@@ -51,6 +53,7 @@ const addPage = function () {
         }
         reducer(action)
     }
+    
     const page = document.createElement('div')
     const cancelButton = button('Cancel')
     const addButton = button('Add')

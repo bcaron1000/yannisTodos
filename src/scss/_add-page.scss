@@ -107,7 +107,7 @@ table.transactions tr>th {
 .table{
     button{
         margin-top: 1.5rem;
-        margin-right: 0.5rem;
+        
         border-radius: 6px;
         color: white;
         width: 5rem;
@@ -115,10 +115,12 @@ table.transactions tr>th {
     button:first-of-type{
         background-image: linear-gradient(45deg,#5364FA, #B5BCF7);
         border-image: linear-gradient( #B5BCF7, #5364FA);
+        margin-right: 0.25rem;
        
     }
     button:last-of-type{
         background-image: linear-gradient(45deg,red, rgb(105, 98, 98));
         border-image: linear-gradient( rgb(105, 98, 98),red,); 
+        margin-left: 0.25rem;
     }
 }
