@@ -32,7 +32,7 @@ const editPage = function (props) {
 
         if (complete === "true"){
             complete = true
-            endTime = currentTime
+            
         }else{
             complete = false
         }
@@ -60,7 +60,7 @@ const editPage = function (props) {
         let startTime = props.startTime;
         let endDate = props.endDate
         let endTime = props.endTime
-        console.log(itemComplete);
+        
 
         let completedTemplate
         if (itemComplete === true){
